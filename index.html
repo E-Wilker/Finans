@@ -14,22 +14,24 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-    <title>TESTE BRANCH CONTEUDO</title>
+    <title>Finans - finanças pessoais</title>
 
   </head>
   <body>
-      <header>
+      <header><!-----------Cabeçalho--------->
         <nav class="navbar navbar-expand-sm navbar-light bg-warning">
           <div class="container">
-
             <a href="#" class="navbar-brand">
               <img src="img/logo.png" width="142">
             </a>
+            
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+              <span class="navbar-toggler-icon">
+              </span>
+            </button>
 
-            <div class="collapse navbar-collapse">
-
+            <div class="collapse navbar-collapse" id="nav-principal">
               <ul class="navbar-nav ml-auto">
-
                 <li class="nav-item">
                   <a href=""  class="nav-link">Home</a>
                 </li>
@@ -49,15 +51,50 @@
                 <li class="nav-item">
                   <a href=""  class="btn btn-outline-light ml-4">Entrar</a><!--BOTÃO-->
                 </li>
-
               </ul>
+            </div>
+          </div>
+        </nav>
+      </header><!--------Fim cabeçalho------>
 
+      <section id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+              <div class="align-self-center">
+                <h1 class="display-4">Suas contas, descomplicadas</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis voluptate repudiandae consequuntur temporibus deserunt. A corporis tenetur voluptatem aspernatur soluta placeat quia temporibus esse aliquam similique perferendis, impedit velit animi.
+                  </p>
+
+                  <form  class="mt-4 mb-4"><!-----Cadastro de e-mail------>
+                    <div class="input-group input-group-lg">
+                      <input type="text" placeholder="Seu e-mail" class="form-control">
+                      <div class="input-group-append">
+                        <button type="button" class="btn btn-primary">Cadastre-se</button>
+                      </div>
+                    </div>
+                  </form><!----------------------Cadastro de e-mail------>
+
+                  <p>Disponível para
+                    <a href="" class="btn btn-outline-light">
+                      <i class="fab fa-android fa-lg"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-light">
+                      <i class="fab fa-apple"></i>
+                    </a>
+                  </p>
+
+              </div>
             </div>
 
+            <div class="col-md-6 d-none d-md-block">
+              <img src="img/capa-mulher.png">
+            </div>
           </div>
+        </div>
+      </section>
 
-        </nav>
-      </header>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
